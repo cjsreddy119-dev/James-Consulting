@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styled.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styled.css" />
 
-   <!-- Navbar -->
+    <style>
+      /* Section */
+      .projects-section {
+        padding: 60px 10%;
+        text-align: center;
+      }
+
+      /* Heading */
+      .section-title {
+        font-size: 48px;
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+        color: #222;
+      }
+
+      /* Container */
+      .projects-container {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* Cards */
+      .project-card {
+        background: white;
+        width: 400px;
+        text-align: left;
+      }
+
+      .project-card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .project-card h2 {
+        font-size: 28px;
+        margin: 20px 0 10px;
+      }
+
+      .project-card p {
+        font-size: 15px;
+        color: #555;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="logo"><a style="color: white;" href="landing.html">JAMES CONSULTING</a></div>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
         <li><a href="service.html">Services</a></li>
-        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Projects,html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Plans&Pricing.html">Plans&Pricig</a></li>
         <li><a href="Tools&Tips.html">Tools&Tips</a></li>
@@ -22,7 +68,52 @@
       </ul>
     </nav>
 
-    
+    <section class="projects-section">
+      <h1 class="section-title">PROJECTS</h1>
+
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="./images/p1.avif" alt="Project 1" />
+          <h2>PROJECT 1</h2>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me.
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="./images/p2.avif" alt="Project 2" />
+          <h2>PROJECT 2</h2>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me.
+          </p>
+        </div>
+
+
+        <div class="project-card">
+          <img src="./images/p3.avif" alt="Project 2" />
+          <h2>PROJECT 3</h2>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me.
+          </p>
+        </div>
+
+
+
+        <div class="project-card">
+          <img src="./images/p4.avif" alt="Project 2" />
+          <h2>PROJECT 4</h2>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <section class="maps">
       <h3>GET A FREE CONSULTATION</h3>
@@ -81,6 +172,5 @@
         </div>
       </div>
     </footer>
-
-</body>
+  </body>
 </html>

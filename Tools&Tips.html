@@ -5,10 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styled.css">
+    <style>
+        /* Container to center everything */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Intro Section Styles */
+.intro-section {
+  text-align: center;
+  padding: 60px 0; /* Creates the large white space at the top */
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.intro-section h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+}
+
+/* Management Section Styles */
+.management-section {
+  padding: 30px 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end; /* Aligns search to the right */
+  margin-bottom: 20px;
+}
+
+.file-grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.file-grid th {
+  text-align: left;
+  border-bottom: 2px solid #eee;
+  padding: 12px;
+  color: #888;
+  font-weight: 400;
+}
+    </style>
 </head>
 <body>
-
-   <!-- Navbar -->
+      <!-- Navbar -->
     <nav class="navbar">
       <div class="logo"><a style="color: white;" href="landing.html">JAMES CONSULTING</a></div>
       <ul class="nav-links">
@@ -22,7 +66,48 @@
       </ul>
     </nav>
 
+
+    <main class="container">
+  
+  <section class="intro-section">
+    <h1>TOOLS & TIPS</h1>
+    <p>Use this area to upload files you wish to share with your users. You can manage who has access to <br> your files and what they can do, such as view & download, upload items and more.</p>
+  </section>
+
+  <section class="management-section">
     
+    <div class="toolbar">
+      <div class="search-box">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search 'Files & Folders'...">
+      </div>
+    </div>
+
+    <table class="file-grid">
+      <thead>
+        <tr>
+          <th>Item name ↑</th>
+          <th>Last updated</th>
+          <th>Views</th>
+          <th>Favorites</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Marketing Tools</strong>
+            <span>0 items</span>
+          </td>
+          <td>Jan 5, 2022</td>
+          <td>20</td>
+          <td>☆ 0</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+</main>
+
 
     <section class="maps">
       <h3>GET A FREE CONSULTATION</h3>

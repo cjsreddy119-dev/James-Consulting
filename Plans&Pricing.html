@@ -5,10 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styled.css">
+    <style>
+        .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* Flexbox Layout */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 40px 30px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Highlighted (Middle) Card */
+.highlighted {
+    background-color: #f9f9f9;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #003366;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Typography Inside Cards */
+.card h3 {
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 4rem;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.price span {
+    font-size: 1.5rem;
+    vertical-align: super;
+    margin-right: 5px;
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    min-height: 60px;
+    margin-bottom: 30px;
+}
+
+.validity {
+    font-size: 0.8rem;
+    color: #999;
+}
+    </style>
 </head>
 <body>
-
-   <!-- Navbar -->
+      <!-- Navbar -->
     <nav class="navbar">
       <div class="logo"><a style="color: white;" href="landing.html">JAMES CONSULTING</a></div>
       <ul class="nav-links">
@@ -22,7 +110,41 @@
       </ul>
     </nav>
 
-    
+
+    <section class="pricing-section">
+        <header class="section-header">
+            <h1>GROWTH AND INNOVATION PLANS</h1>
+            <p>We help businesses improve their performance through innovation in products, services, and strategy.</p>
+        </header>
+
+        <div class="pricing-container">
+            <div class="card">
+                <h3>Management 101</h3>
+                <div class="price"><span>$</span>50</div>
+                <p class="description">Actualize your business model and boost your KPIs</p>
+                <p class="validity">Valid for 3 months</p>
+                <button>SELECT</button>
+            </div>
+
+            <div class="card highlighted">
+                <div class="badge">Best Value</div>
+                <h3>Financial Strategy</h3>
+                <div class="price"><span>$</span>100</div>
+                <p class="description">Add value and maximize your competitive advantage</p>
+                <p class="validity">Valid for 6 months</p>
+                <button>SELECT</button>
+            </div>
+
+            <div class="card">
+                <h3>Data and Digital Sol</h3>
+                <div class="price"><span>$</span>70</div>
+                <p class="description">Harness the power of technology to upgrade business</p>
+                <p class="validity">Valid for 12 months</p>
+                <button>SELECT</button>
+            </div>
+        </div>
+    </section>
+
 
     <section class="maps">
       <h3>GET A FREE CONSULTATION</h3>

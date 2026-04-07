@@ -86,3 +86,21 @@ dots.forEach((dot, i) => {
     showTestimonial(index);
   };
 });
+
+
+
+
+
+
+
+//chat
+const chatCard = document.querySelector(".chat-card");
+  const chatBox = document.getElementById("chatBox");
+
+  chatCard.addEventListener("click", function() {
+    if (chatBox.style.display === "none") {
+      chatBox.style.display = "block";
+    } else {
+      chatBox.style.display = "none";
+    }
+  });
